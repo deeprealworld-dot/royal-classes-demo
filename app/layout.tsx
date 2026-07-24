@@ -3,6 +3,7 @@ import { Playfair_Display, Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
 import "./premium.css";
 import "./polish.css";
+import "./official-brand.css";
 
 const jakarta = Plus_Jakarta_Sans({
   variable: "--font-body",

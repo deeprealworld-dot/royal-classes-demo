@@ -1,0 +1,280 @@
+/* Official Royal Classes palette sampled from royalclasses.com */
+:root {
+  --navy-950: #171313;
+  --navy-900: #241818;
+  --navy-800: #392222;
+  --royal-700: #cf1e23;
+  --royal-600: #e41e23;
+  --royal-100: #fff0f0;
+  --gold-500: #fda31b;
+  --gold-400: #ffb23e;
+  --gold-100: #fff4df;
+  --ink: #211b1b;
+  --muted: #706565;
+  --line: #eadede;
+  --surface: #fff8f7;
+  --white: #ffffff;
+  --shadow-sm: 0 12px 36px rgba(86, 19, 22, 0.08);
+  --shadow-lg: 0 32px 90px rgba(48, 10, 12, 0.2);
+}
+
+body {
+  background: #fffdfc;
+  color: var(--ink);
+}
+
+.site-header {
+  border-bottom-color: rgba(207, 30, 35, 0.1);
+  background: rgba(255, 253, 252, 0.94);
+}
+
+.admission-ribbon {
+  background: linear-gradient(90deg, #b9161b 0%, #cf1e23 48%, #e41e23 100%);
+  color: rgba(255, 255, 255, 0.94);
+}
+
+.ribbon-inner p > span:first-child,
+.ribbon-inner > a:hover {
+  color: #ffd06d;
+}
+
+.nav-row {
+  border-color: rgba(207, 30, 35, 0.09);
+  background: rgba(255, 255, 255, 0.96);
+  box-shadow: 0 12px 38px rgba(83, 17, 20, 0.09);
+}
+
+.brand-mark {
+  background:
+    linear-gradient(145deg, rgba(255, 255, 255, 0.16), transparent 46%),
+    linear-gradient(145deg, #e41e23, #a90f15);
+  color: #fff;
+  box-shadow:
+    inset 0 -4px 0 var(--gold-500),
+    0 12px 24px rgba(125, 16, 20, 0.24);
+}
+
+.brand-copy strong,
+.nav-phone,
+.menu-button {
+  color: var(--royal-700);
+}
+
+.desktop-nav a {
+  color: #4d4040;
+}
+
+.desktop-nav a::after {
+  background: linear-gradient(90deg, var(--royal-700), var(--gold-500));
+}
+
+.desktop-nav a:hover {
+  color: var(--royal-700);
+}
+
+.mobile-nav .mobile-enquire,
+.button-small,
+.button-primary {
+  background: linear-gradient(135deg, #e41e23, #b9161b);
+  color: #fff;
+  box-shadow: 0 12px 26px rgba(207, 30, 35, 0.22);
+}
+
+.button-small:hover,
+.button-primary:hover {
+  background: linear-gradient(135deg, #c8191e, #961015);
+}
+
+.button-gold {
+  background: linear-gradient(135deg, #ffbd51, #f39a0b);
+  color: #291b0a;
+  box-shadow: 0 16px 34px rgba(253, 163, 27, 0.27);
+}
+
+.button-gold:hover {
+  background: linear-gradient(135deg, #ffc966, #fda31b);
+}
+
+.button-outline,
+.nav-phone {
+  border-color: rgba(207, 30, 35, 0.14);
+  background: #fff6f5;
+}
+
+.hero {
+  background:
+    radial-gradient(circle at 15% 16%, rgba(228, 30, 35, 0.34), transparent 34%),
+    radial-gradient(circle at 88% 24%, rgba(253, 163, 27, 0.2), transparent 29%),
+    linear-gradient(122deg, #171313 0%, #2f1718 52%, #68191d 100%);
+}
+
+.hero::before {
+  border-color: rgba(255, 255, 255, 0.08);
+}
+
+.hero::after {
+  border-color: rgba(228, 30, 35, 0.12);
+}
+
+.eyebrow {
+  border-color: rgba(255, 190, 76, 0.35);
+  background: rgba(207, 30, 35, 0.15);
+  color: #ffc15a;
+}
+
+.eyebrow > span {
+  box-shadow: 0 0 0 5px rgba(253, 163, 27, 0.14);
+}
+
+.hero-copy h1 em,
+.text-action:hover,
+.section-kicker.light,
+.course-page-link,
+.inline-link {
+  color: var(--gold-400);
+}
+
+.hero-photo-frame {
+  border-color: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 40px 100px rgba(31, 6, 8, 0.4);
+}
+
+.image-shade {
+  background:
+    linear-gradient(to top, rgba(30, 7, 8, 0.92), transparent 58%),
+    linear-gradient(120deg, rgba(207, 30, 35, 0.12), transparent);
+}
+
+.experience-card {
+  background: linear-gradient(145deg, #ffc65f, #f39a0b);
+  box-shadow: 0 24px 60px rgba(49, 12, 12, 0.3);
+}
+
+.attention-card {
+  border-color: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 24px 58px rgba(49, 10, 12, 0.28);
+}
+
+.admission-band {
+  border-bottom-color: #f4d4b0;
+  background:
+    radial-gradient(circle at 0 0, rgba(255, 255, 255, 0.94), transparent 34%),
+    linear-gradient(90deg, #fff8f1, #fff0d6);
+}
+
+.admission-band-inner > a,
+.section-kicker,
+.inline-link {
+  background: var(--royal-100);
+  color: var(--royal-700);
+}
+
+.trust-strip-grid,
+.course-card,
+.quick-card,
+.why-grid article,
+.testimonial-grid article,
+.form-card {
+  border-color: rgba(207, 30, 35, 0.09);
+  box-shadow: 0 14px 40px rgba(83, 17, 20, 0.07);
+}
+
+.about-section {
+  background: linear-gradient(180deg, #fffaf9, #ffffff 50%);
+}
+
+.about-image-wrap::before {
+  background: linear-gradient(145deg, #ffbd51, #f39a0b);
+}
+
+.about-points div,
+.course-page-link,
+.form-grid input,
+.form-grid select,
+.form-grid textarea {
+  background: #fff8f7;
+}
+
+.director-card {
+  border-color: rgba(255, 255, 255, 0.1);
+  background:
+    radial-gradient(circle at 85% 0, rgba(228, 30, 35, 0.28), transparent 34%),
+    linear-gradient(135deg, #171313, #491719);
+  box-shadow: 0 30px 90px rgba(67, 11, 14, 0.24);
+}
+
+.courses-section,
+.why-section,
+.testimonials-section,
+.quick-programmes {
+  background: #fff8f7;
+}
+
+.course-card::before {
+  background: linear-gradient(90deg, var(--royal-700), var(--gold-500));
+}
+
+.course-card:hover,
+.quick-card:hover,
+.why-grid article:hover {
+  border-color: rgba(207, 30, 35, 0.28);
+  box-shadow: 0 24px 60px rgba(83, 17, 20, 0.14);
+}
+
+.course-icon,
+.quick-icon,
+.why-grid svg {
+  background: linear-gradient(145deg, #fff1ef, #ffe4e1);
+  color: var(--royal-700);
+  box-shadow: inset 0 0 0 1px rgba(207, 30, 35, 0.08);
+}
+
+.form-grid input:focus,
+.form-grid select:focus,
+.form-grid textarea:focus {
+  border-color: var(--royal-600);
+  box-shadow: 0 0 0 4px rgba(228, 30, 35, 0.11);
+}
+
+.interior-hero {
+  background:
+    radial-gradient(circle at 12% 0, rgba(228, 30, 35, 0.32), transparent 31%),
+    radial-gradient(circle at 90% 35%, rgba(253, 163, 27, 0.16), transparent 27%),
+    linear-gradient(120deg, #171313, #341719 61%, #741a1f);
+}
+
+.cta-band {
+  background: linear-gradient(90deg, #f39a0b, #fda31b 48%, #ffbd51) !important;
+}
+
+.site-footer {
+  background:
+    radial-gradient(circle at 82% 0, rgba(228, 30, 35, 0.24), transparent 28%),
+    linear-gradient(135deg, #151111, #341719 66%, #5f181b);
+}
+
+.floating-call {
+  background: linear-gradient(135deg, #e41e23, #b9161b);
+  box-shadow: 0 14px 34px rgba(207, 30, 35, 0.28);
+}
+
+.route-skeleton-hero {
+  background: linear-gradient(120deg, #171313, #3a1719 62%, #741a1f);
+}
+
+.route-skeleton-pill,
+.route-skeleton-line,
+.route-skeleton-card,
+.route-skeleton-media {
+  background-image: linear-gradient(90deg, #f5e6e5 25%, #fff7f4 50%, #f5e6e5 75%);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-photo-frame img,
+  .button,
+  .course-card,
+  .quick-card,
+  .why-grid article {
+    transition: none !important;
+  }
+}
