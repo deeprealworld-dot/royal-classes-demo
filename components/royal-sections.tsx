@@ -129,7 +129,7 @@ export function CtaBand({
   copy?: string;
 }) {
   return (
-    <section className="bg-[var(--gold-500)]">
+    <section className="cta-band bg-[var(--gold-500)]">
       <div className="shell flex flex-col items-start justify-between gap-7 py-10 sm:py-12 lg:flex-row lg:items-center">
         <Reveal className="max-w-[680px]">
           <span className="text-[10px] font-extrabold uppercase tracking-[0.14em] text-[color:var(--navy-900)]/[0.65]">
