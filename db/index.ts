@@ -1,13 +1,25 @@
-import { env } from "cloudflare:workers";
-import { drizzle } from "drizzle-orm/d1";
-import * as schema from "./schema";
+interface DisabledD1Query {
+  from(...args: unknown[]): DisabledD1Query;
+  orderBy(...args: unknown[]): DisabledD1Query;
+  limit(...args: unknown[]): Promise<unknown[]>;
+  values(...args: unknown[]): DisabledD1Query;
+  returning(...args: unknown[]): Promise<unknown[]>;
+}
 
-export function getDb() {
-  if (!env.DB) {
-    throw new Error(
-      "Cloudflare D1 binding `DB` is unavailable. Set the `d1` field in .openai/hosting.json to `DB` or let your control plane inject the real binding values before using the database."
-    );
-  }
+interface DisabledD1Database {
+  select(...args: unknown[]): DisabledD1Query;
+  insert(...args: unknown[]): DisabledD1Query;
+}
 
-  return drizzle(env.DB, { schema });
+/**
+ * The Royal Classes website does not use a database.
+ *
+ * This project originally included an optional Cloudflare D1 example. Vercel's
+ * Node.js build/runtime cannot resolve the Cloudflare-only `cloudflare:workers`
+ * module, so the unused example is intentionally disabled for this deployment.
+ */
+export function getDb(): DisabledD1Database {
+  throw new Error(
+    "The optional Cloudflare D1 example is disabled in this Vercel deployment."
+  );
 }
