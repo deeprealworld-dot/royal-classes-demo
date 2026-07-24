@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Playfair_Display, Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
 import "./premium.css";
+import "./polish.css";
 
 const jakarta = Plus_Jakarta_Sans({
   variable: "--font-body",
@@ -36,9 +37,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${jakarta.variable} ${playfair.variable} antialiased`}
-      >
+      <body className={`${jakarta.variable} ${playfair.variable} antialiased`}>
         {children}
       </body>
     </html>
