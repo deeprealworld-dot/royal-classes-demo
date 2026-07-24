@@ -19,11 +19,12 @@ export function Reveal({
   return (
     <motion.div
       className={className}
-      initial={reduceMotion ? false : { opacity: 0, y: 24 }}
+      initial={reduceMotion ? false : { opacity: 0, y: 14 }}
       whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true, amount: 0.18 }}
+      viewport={{ once: true, amount: 0.12, margin: "0px 0px -8% 0px" }}
+      style={{ willChange: reduceMotion ? "auto" : "transform, opacity" }}
       transition={{
-        duration: reduceMotion ? 0 : 0.58,
+        duration: reduceMotion ? 0 : 0.48,
         delay: reduceMotion ? 0 : delay,
         ease: [0.22, 1, 0.36, 1],
       }}
@@ -72,7 +73,7 @@ export function PageHero({
         {!compact && (
           <Reveal
             className="flex flex-wrap items-center gap-3 lg:max-w-[230px] lg:flex-col lg:items-stretch"
-            delay={0.12}
+            delay={0.1}
           >
             <a className="button button-gold" href={primaryHref}>
               {primaryLabel}
@@ -142,7 +143,7 @@ export function CtaBand({
             {copy}
           </p>
         </Reveal>
-        <Reveal className="flex flex-wrap gap-3" delay={0.1}>
+        <Reveal className="flex flex-wrap gap-3" delay={0.08}>
           <a className="button button-dark" href="/admission">
             Enquire Now
             <ArrowRight size={17} aria-hidden="true" />
