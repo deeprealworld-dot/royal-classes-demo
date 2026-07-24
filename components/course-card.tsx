@@ -39,7 +39,7 @@ export function CourseCard({
 
   return (
     <motion.article
-      className="group relative flex h-full flex-col overflow-hidden rounded-[10px] border border-[#dce5f0] bg-white p-6 shadow-[0_8px_26px_rgba(9,31,65,0.055)]"
+      className="interior-course-card group relative flex h-full flex-col overflow-hidden rounded-[22px] border border-[#e2e7ef] bg-white p-7 shadow-[0_14px_40px_rgba(9,31,65,0.065)]"
       initial={reduceMotion ? false : { opacity: 0, y: 24 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, amount: 0.15 }}
@@ -50,23 +50,23 @@ export function CourseCard({
         ease: [0.22, 1, 0.36, 1],
       }}
     >
-      <span className="absolute inset-x-0 top-0 h-[3px] origin-center scale-x-40 bg-[var(--royal-700)] opacity-0 transition duration-200 group-hover:scale-x-100 group-hover:opacity-100" />
+      <span className="absolute inset-x-0 top-0 h-[5px] origin-center scale-x-40 bg-gradient-to-r from-[var(--royal-600)] to-[var(--gold-500)] opacity-0 transition duration-200 group-hover:scale-x-100 group-hover:opacity-100" />
       <div className="flex items-center justify-between gap-4">
-        <span className="grid h-11 w-11 place-items-center rounded-lg bg-[var(--royal-100)] text-[var(--royal-700)]">
+        <span className="grid h-12 w-12 place-items-center rounded-[15px] bg-[var(--royal-100)] text-[var(--royal-700)] shadow-[inset_0_0_0_1px_rgba(49,84,200,0.08)]">
           <Icon size={23} aria-hidden="true" />
         </span>
         <span className="text-[9px] font-extrabold uppercase tracking-[0.1em] text-[#80611f]">
           {course.category}
         </span>
       </div>
-      <h2 className="mt-5 text-[21px] font-[790] tracking-[-0.03em] text-[var(--navy-900)]">
+      <h2 className="mt-6 text-[24px] font-[790] tracking-[-0.03em] text-[var(--navy-900)]">
         {course.title}
       </h2>
-      <p className="mt-2 flex-1 text-[12.5px] leading-[1.7] text-[var(--muted)]">
+      <p className="mt-3 flex-1 text-[13px] leading-[1.8] text-[var(--muted)]">
         {course.short}
       </p>
       <a
-        className="mt-5 inline-flex items-center justify-between border-t border-[#e8edf4] pt-4 text-xs font-bold text-[var(--royal-700)]"
+        className="mt-6 inline-flex min-h-11 items-center justify-between rounded-xl bg-[var(--surface)] px-3 text-xs font-bold text-[var(--royal-700)]"
         href={`/courses/${course.slug}`}
       >
         View Details
