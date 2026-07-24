@@ -53,7 +53,7 @@ export function SiteHeader() {
           </span>
           <span className="brand-copy">
             <strong>Royal Classes</strong>
-            <small>Jogeshwari East, Mumbai</small>
+            <small>Science • NEET • JEE</small>
           </span>
         </Link>
 
